@@ -6,7 +6,7 @@ def add_hours_to_time(time_str):
     minutes, seconds = time_str.split(":")
     return f"00:{minutes}:{seconds}"
 
-def csv_to_single_srt(csv_file, srt_file):
+def csv_to_srt_with_linebreaks(csv_file, srt_file):
     # Ensure the output directory exists
     os.makedirs(os.path.dirname(srt_file), exist_ok=True)
 
@@ -16,17 +16,20 @@ def csv_to_single_srt(csv_file, srt_file):
         counter = 1  # Subtitle numbering
 
         for row in reader:
-            # Extract start_time, end_time, and text from the CSV
+            # Extract start_time, end_time, and lyrics from the CSV
             start_time = row["start_time"]
             end_time = row["end_time"]
-            text = row["lyrics"]
+            lyrics = row["lyrics"].replace("\\n", "\n")  # Replace "\n" with an actual newline
+            
+            # Strip unnecessary spaces from each line of lyrics
+            lyrics = "\n".join(line.strip() for line in lyrics.split("\n"))
 
             # Add "00" for hours if time format is only minutes:seconds
             start_time = add_hours_to_time(start_time)
             end_time = add_hours_to_time(end_time)
 
             # Format into SRT block
-            srt_output.append(f"{counter}\n{start_time.replace('.', ',')} --> {end_time.replace('.', ',')}\n{text}\n\n")
+            srt_output.append(f"{counter}\n{start_time.replace('.', ',')} --> {end_time.replace('.', ',')}\n{lyrics}\n\n")
             counter += 1
 
     # Write all subtitles to a single .srt file
@@ -40,4 +43,4 @@ csv_file = "processed_lyrics_kor.csv"
 srt_file = "srt_files/Wie bist du, meine Königin.srt"  # Make sure this is a full path to a file, not just a directory
 
 # Convert CSV to single SRT file
-csv_to_single_srt(csv_file, srt_file)
+csv_to_srt_with_linebreaks(csv_file, srt_file)

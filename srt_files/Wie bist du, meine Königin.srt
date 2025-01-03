@@ -1,133 +1,165 @@
 1
 00:00:00,000 --> 00:00:23,800
 Wie bist du, meine Königin?
-여왕님은 그 얼마나 기쁨이 가득하신지!  
+여왕님은 그 얼마나 기쁨이 가득하신지!
 
 2
 00:00:23,800 --> 00:00:38,840
-Durch sanfte Güte, wonnevoll, du lächle nur, \r\n 온후하고 자애로운 나의 여왕님은, 그저 웃기만 하셔도  
+Durch sanfte Güte, wonnevoll, du lächle nur,
+온후하고 자애로운 나의 여왕님은, 그저 웃기만 하셔도
 
 3
 00:00:38,840 --> 00:00:53,740
-Lenzdüfte wehn durch mein Gemüte, wonnevoll. \r\n 봄바람 불어 내 온 맘은 희락이구나!  
+Lenzdüfte wehn durch mein Gemüte, wonnevoll.
+봄바람 불어 내 온 맘은 희락이구나!
 
 4
 00:00:53,800 --> 00:01:00,800
-Wonnevoll. \r\n 희락이구나!  
+Wonnevoll.
+희락이구나!
 
 5
 00:01:00,800 --> 00:01:13,800
-Wonnevoll. \r\n 희락이구나!  
+Wonnevoll.
+희락이구나!
 
 6
 00:01:13,800 --> 00:01:21,800
-Frisch aufgeblühter Rosen Glanz \r\n 막 피어난 장미빛인들  
+Frisch aufgeblühter Rosen Glanz
+막 피어난 장미빛인들
 
 7
 00:01:21,800 --> 00:01:23,780
-Vergleich ich ihn dem deinigen? \r\n 당신의 광채에 비기리,  
+Vergleich ich ihn dem deinigen?
+당신의 광채에 비기리,
 
 8
 00:01:23,780 --> 00:01:30,780
-Ach, über alles, was da blüht, ist deine Blüte \r\n 꽃 피는 모든 것보다 나으니  
+Ach, über alles, was da blüht, ist deine Blüte
+꽃 피는 모든 것보다 나으니
 
 9
 00:01:30,780 --> 00:01:42,780
-Wonnevoll! \r\n 당신의 피어남이 희락이구나!  
+Wonnevoll!
+당신의 피어남이 희락이구나!
 
 10
 00:01:42,780 --> 00:01:50,780
-Wonnevoll. \r\n 희락이구나!  
+Wonnevoll.
+희락이구나!
 
 11
 00:01:50,780 --> 00:01:52,780
-Wonnevoll. \r\n 희락이구나!  
+Wonnevoll.
+희락이구나!
 
 12
 00:01:52,780 --> 00:01:53,780
-Wonnevoll. \r\n 희락이구나!  
+Wonnevoll.
+희락이구나!
 
 13
 00:01:53,780 --> 00:01:56,780
-Frisch aufgeblühter Rosen Glanz \r\n 막 피어난 장미빛인들  
+Frisch aufgeblühter Rosen Glanz
+막 피어난 장미빛인들
 
 14
 00:01:56,780 --> 00:01:57,780
-Vergleich ich ihn dem deinigen? \r\n 당신의 광채에 비기리,  
+Vergleich ich ihn dem deinigen?
+당신의 광채에 비기리,
 
 15
 00:01:57,780 --> 00:01:59,780
-Ach, über alles, was da blüht, ist deine Blüte \r\n 꽃 피는 모든 것보다 나으니  
+Ach, über alles, was da blüht, ist deine Blüte
+꽃 피는 모든 것보다 나으니
 
 16
 00:01:59,780 --> 00:02:08,780
-Wonnevoll! \r\n 당신의 피어남이 희락이구나!  
+Wonnevoll!
+당신의 피어남이 희락이구나!
 
 17
 00:02:08,780 --> 00:02:15,780
-Durch tote Wüsten wandle hin, \r\n 죽음의 광야를 거니신대도  
+Durch tote Wüsten wandle hin,
+죽음의 광야를 거니신대도
 
 18
 00:02:15,780 --> 00:02:20,780
-Und grüne Schatten breiten sich, \r\n 녹빛의 그늘 펼쳐지리니  
+Und grüne Schatten breiten sich,
+녹빛의 그늘 펼쳐지리니
 
 19
 00:02:20,780 --> 00:02:22,780
-Und grüne Schatten breiten sich, \r\n 녹빛의 그늘 펼쳐지리니  
+Und grüne Schatten breiten sich,
+녹빛의 그늘 펼쳐지리니
 
 20
 00:02:22,780 --> 00:02:28,780
-Ob fürchterliche Schwüle dort \r\n 그 지독한 혹서도  
+Ob fürchterliche Schwüle dort
+그 지독한 혹서도
 
 21
 00:02:28,780 --> 00:02:42,780
-Ohn Ende brüte, wonnevoll! \r\n 끝없는 열기마저 희락이구나!  
+Ohn Ende brüte, wonnevoll!
+끝없는 열기마저 희락이구나!
 
 22
 00:02:42,780 --> 00:02:48,780
-Wonnevoll, wonnevoll, \r\n 희락이구나, 희락이구나,  
+Wonnevoll, wonnevoll,
+희락이구나, 희락이구나,
 
 23
 00:02:48,780 --> 00:02:49,780
-Wonnevoll. \r\n 희락이구나!  
+Wonnevoll.
+희락이구나!
 
 24
 00:02:49,780 --> 00:02:59,780
-Lass mich vergehn in deinem Arm! \r\n 당신 품 속에서 죽게 해 주오!  
+Lass mich vergehn in deinem Arm!
+당신 품 속에서 죽게 해 주오!
 
 25
 00:02:59,780 --> 00:03:19,780
-Lass mich vergehn in deinem Arm! \r\n 당신 품 속에서 죽게 해 주오!  
+Lass mich vergehn in deinem Arm!
+당신 품 속에서 죽게 해 주오!
 
 26
 00:03:19,780 --> 00:03:29,160
-Es ist ihm ja selbst der Tod. \r\n 제 아무리 쓰디쓴 사멸의 고통  
+Es ist ihm ja selbst der Tod.
+제 아무리 쓰디쓴 사멸의 고통
 
 27
 00:03:29,780 --> 00:03:41,780
-Ob auch die herbste Todesqual die Brust durchwüte. \r\n 가슴 속 날뛰어도,  
+Ob auch die herbste Todesqual die Brust durchwüte.
+가슴 속 날뛰어도,
 
 28
 00:03:41,780 --> 00:03:48,780
-Wonnevoll! \r\n 희락이구나!  
+Wonnevoll!
+희락이구나!
 
 29
 00:03:48,780 --> 00:03:58,780
-Wonnevoll! \r\n 희락이구나!  
+Wonnevoll!
+희락이구나!
 
 30
 00:03:59,780 --> 00:04:09,780
-Es ist ihm ja selbst der Tod. \r\n 제 아무리 쓰디쓴 사멸의 고통  
+Es ist ihm ja selbst der Tod.
+제 아무리 쓰디쓴 사멸의 고통
 
 31
 00:04:09,780 --> 00:04:19,780
-Ob auch die herbste Todesqual. \r\n 제 아무리 쓰디쓴 사멸의 고통  
+Ob auch die herbste Todesqual.
+제 아무리 쓰디쓴 사멸의 고통
 
 32
 00:04:19,780 --> 00:04:25,780
-Es ist ihm ja selbst der Tod. \r\n 제 아무리 쓰디쓴 사멸의 고통  
+Es ist ihm ja selbst der Tod.
+제 아무리 쓰디쓴 사멸의 고통
 
 33
 00:04:25,780 --> 00:04:27,780
-Ob auch die herbste Todesqual. \r\n 제 아무리 쓰디쓴 사멸의 고통  
+Ob auch die herbste Todesqual.
+제 아무리 쓰디쓴 사멸의 고통
 
