@@ -1,6 +1,10 @@
 import pandas as pd
 import re
 
+'''
+csv 파일로 저장된 가사를 시간, 가사로 분리하여 저장하는 코드
+'''
+
 # CSV 파일 경로
 file_path = "extracted_lyrics_kor.csv"
 

@@ -1,0 +1,158 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Strauss Op.10 Nr.1 Gilm, H.von - Zueignung (Prey Sawallisch)Phil.mp4 Video Player</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #f4f4f4;
+    }
+    video {
+      width: 80%;
+      margin-top: 20px;
+      position: relative;
+    }
+    .subtitles {
+      width: 80%;
+      margin-top: 20px;
+      background: white;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .subtitle {
+      margin: 5px 0;
+    }
+    .subtitle a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+    .subtitle a:hover {
+      text-decoration: underline;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <video id="video" controls>
+    <source src= "Strauss Op.10 Nr.1 Gilm, H.von - Zueignung (Prey Sawallisch)Phil.mp4" type="video/mp4">
+    <track id="subtitle-track" label="Deutsch" kind="subtitles" srclang="de" src="BrahmsOp.32.vtt" default>
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="subtitles" id="subtitles"></div>
+
+  <script>
+    // SRT data
+    const srtData = "00:00:00,000 --> 00:00:18,720\nJa, du wei\u00dft es, Ja, du wei\u00dft es, Ja, du wei\u00dft es, teure Seele, Ja, du wei\u00dft es, teure Seele, Da\u00df ich fern von Da\u00df ich fern von dir Da\u00df ich fern von dir mich qu\u00e4le, Da\u00df ich fern von dir mich qu\u00e4le,\n\n\n00:00:18,720 --> 00:00:30,240\nLiebe macht die Herzen Liebe macht die Herzen Liebe macht die Herzen krank, Habe Dank.\n\n\n00:00:32,960 --> 00:00:43,080\nEinst hielt ich, der Da\u00df ich fern von Einst hielt ich, der Freiheit Zecher, Hoch den Amethysten-Becher, Hoch den Amethysten-Becher, Hoch den Amethysten-Becher,\n\n\n00:00:43,080 --> 00:00:48,520\nUnd du segnetest den Und du segnetest den Und du segnetest den Trank,\n\n\n00:00:48,720 --> 00:00:51,720\nHabe Dank.\n\n\n00:00:58,720 --> 00:01:09,720\nUnd du segnetest den Und beschworst darin die Bis ich, was ich Bis ich, was ich Da\u00df ich fern von Bis ich, was ich nie gewesen,\n\n\n00:01:09,720 --> 00:01:16,720\nHeilig an das Herz Heilig an das Herz dir sangt.\n\n\n00:01:18,720 --> 00:01:28,720\nHabe Dank.\n\n\n00:01:28,720 --> 00:01:30,720\nHabe Dank.\n";
+
+    const subtitlesContainer = document.getElementById('subtitles');
+    const video = document.getElementById('video');
+
+    // Parse SRT
+    function parseSRT(srt) {
+      const subtitles = [];
+      const lines = srt.split('\n');
+      let subtitle = { start: null, end: null, text: '' };
+
+      lines.forEach((line) => {
+        const timeMatch = line.match(/(\d{2}:\d{2}:\d{2}),(\d{3}) --> (\d{2}:\d{2}:\d{2}),(\d{3})/);
+        if (timeMatch) {
+          if (subtitle.text) subtitles.push(subtitle);
+          subtitle = {
+            start: timeToSeconds(timeMatch[1], timeMatch[2]),
+            end: timeToSeconds(timeMatch[3], timeMatch[4]),
+            text: ''
+          };
+        } else if (line.trim() === '') {
+          if (subtitle.text) subtitles.push(subtitle);
+          subtitle = { start: null, end: null, text: '' };
+        } else {
+          subtitle.text += (subtitle.text ? '\n' : '') + line;
+        }
+      });
+      return subtitles;
+    }
+
+    function timeToSeconds(hhmmss, milliseconds) {
+      const [hours, minutes, seconds] = hhmmss.split(':').map(Number);
+      return hours * 3600 + minutes * 60 + seconds + milliseconds / 1000;
+    }
+
+    // // Convert parsed subtitles to WebVTT format
+    // function convertToVTT(subtitles) {
+    //   let vtt = 'WEBVTT\n\n';
+    //   subtitles.forEach((subtitle) => {
+    //     const start = secondsToVTT(subtitle.start);
+    //     const end = secondsToVTT(subtitle.end);
+    //     vtt += `${start} --> ${end}\n${subtitle.text}\n\n`;
+    //   });
+    //   return vtt;
+    // }
+
+        // Convert parsed subtitles to WebVTT format
+    function convertToVTT(subtitles) {
+    let vtt = 'WEBVTT\n\n'; // Ensure proper WebVTT header
+    subtitles.forEach((subtitle) => {
+        if (subtitle.text.trim()) { // Ignore empty or invalid subtitles
+        const start = secondsToVTT(subtitle.start);
+        const end = secondsToVTT(subtitle.end);
+        vtt += `${start} --> ${end}\n${subtitle.text.trim()}\n\n`;
+        }
+    });
+    return vtt;
+    }
+
+    function secondsToVTT(seconds) {
+      const hh = String(Math.floor(seconds / 3600)).padStart(2, '0');
+      const mm = String(Math.floor((seconds % 3600) / 60)).padStart(2, '0');
+      const ss = String(Math.floor(seconds % 60)).padStart(2, '0');
+      const ms = String(Math.floor((seconds % 1) * 1000)).padStart(3, '0');
+      return `${hh}:${mm}:${ss}.${ms}`;
+    }
+
+    // Generate subtitle list
+    function generateSubtitleList(subtitles) {
+      subtitles.forEach((subtitle) => {
+        const div = document.createElement('div');
+        div.className = 'subtitle';
+        const link = document.createElement('a');
+        link.href = '#';
+        link.textContent = subtitle.text;
+        link.onclick = (e) => {
+          e.preventDefault();
+          video.currentTime = subtitle.start;
+          video.play();
+        };
+        div.appendChild(link);
+        subtitlesContainer.appendChild(div);
+      });
+    }
+
+    // Add VTT track to video
+    function addTrackToVideo(vttData) {
+      const blob = new Blob([vttData], { type: 'text/vtt' });
+      const url = URL.createObjectURL(blob);
+      const track = document.getElementById('subtitle-track');
+      track.src = url;
+    }
+
+    // Main execution
+    const subtitles = parseSRT(srtData);
+    const vttData = convertToVTT(subtitles);
+    addTrackToVideo(vttData);
+    generateSubtitleList(subtitles);
+  </script>
+</body>
+</html>
+

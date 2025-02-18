@@ -1,0 +1,158 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahler Des Knaben Wunderhorn - Des Antonius von Padua Fischpredigt (Quastoff Abbado).mp4 Video Player</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #f4f4f4;
+    }
+    video {
+      width: 80%;
+      margin-top: 20px;
+      position: relative;
+    }
+    .subtitles {
+      width: 80%;
+      margin-top: 20px;
+      background: white;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .subtitle {
+      margin: 5px 0;
+    }
+    .subtitle a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+    .subtitle a:hover {
+      text-decoration: underline;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <video id="video" controls>
+    <source src= "Mahler Des Knaben Wunderhorn - Des Antonius von Padua Fischpredigt (Quastoff Abbado).mp4" type="video/mp4">
+    <track id="subtitle-track" label="Deutsch" kind="subtitles" srclang="de" src="BrahmsOp.32.vtt" default>
+    Your browser does not support the video tag.
+  </video>
+
+  <div class="subtitles" id="subtitles"></div>
+
+  <script>
+    // SRT data
+    const srtData = "00:00:00,000 --> 00:00:13,980\nAntonius zur Predigt Antonius zur Predigt Die Kirche findt ledig. gliedig,\n\n\n00:00:13,980 --> 00:00:17,980\nEr geht zu den Er geht zu den und predigt den Fischen; und predigt den Fischen; Ichern.\n\n\n00:00:18,880 --> 00:00:23,360\nDie Kirche findt ledig. Sie schlagen mit den Im Sonnenschein gl\u00e4nzen. Im Sonnenschein gl\u00e4nzen.\n\n\n00:00:23,360 --> 00:00:30,200\nSie schlagen mit den Sie schlagen mit den Sie schlagen mit den\n\n\n00:00:32,200 --> 00:00:36,800\nDie Karpfen mit Rogen Sie schlagen mit den seint Sind allhier gezogen, Sind allhier gezogen, herzogen,\n\n\n00:00:36,800 --> 00:00:41,800\nHaben d'M\u00e4uler aufrissen, Auf Gottes Begehren Sich Zuh\u00f6rens beflissen; beflie\u00dfen.\n\n\n00:00:47,800 --> 00:00:50,800\nKein Predigt niemalen Die Kirche findt ledig.\n\n\n00:00:50,800 --> 00:00:55,400\nDie Kirche findt ledig. sucht fahlen.\n\n\n00:01:11,560 --> 00:01:16,580\nSpitzgoschete Hechte, kostete Die Kirche findt ledig. Er geht zu den Die immerzu fechten,\n\n\n00:01:16,860 --> 00:01:20,040\nsein Eilens Sind allhier gezogen, Zu h\u00f6ren den Frommen; Sich Zuh\u00f6rens beflissen;\n\n\n00:01:20,240 --> 00:01:20,780\nZu h\u00f6ren den Frommen; Zu h\u00f6ren den Frommen; Zu h\u00f6ren den Frommen; Zu h\u00f6ren den Frommen;\n\n\n00:01:20,780 --> 00:01:25,680\nAuch jene Phantasten, Die Stockfisch ich meine, Er geht zu den fassen,\n\n\n00:01:25,980 --> 00:01:27,960\nDie Stockfisch ich meine, Die Stockfisch ich meine,\n\n\n00:01:28,220 --> 00:01:29,780\nAntonius zur Predigt Zur Predigt erscheinen;\n\n\n00:01:32,760 --> 00:01:35,220\nKein Predigt niemalen Die Kirche findt ledig.\n\n\n00:01:37,420 --> 00:01:39,720\nDie Stockfisch ich meine, sucht fahlen.\n\n\n00:01:50,780 --> 00:01:55,260\npare augen,\n\n\n00:01:55,360 --> 00:01:58,820\nfeit \u0434\u0432\u0430 nunca.\n\n\n00:02:01,320 --> 00:02:03,840\nDie Stockfisch ich meine,\n\n\n00:02:03,840 --> 00:02:08,960\nDie Kirche findt ledig. sem Ar erkennen,\n\n\n00:02:08,960 --> 00:02:11,580\nDie Kirche findt ledig. nicht sitzen,\n\n\n00:02:11,580 --> 00:02:15,160\nDie Kirche findt ledig. Die Kirche findt ledig. nicht kund\u044f\u0434eln.\n\n\n00:02:15,340 --> 00:02:19,960\nDie Kirche findt ledig. Die Stockfisch ich meine, Im Sonnenschein gl\u00e4nzen. stehen Leben.\n\n\n00:02:20,120 --> 00:02:20,480\nUntertitel.\n\n\n00:02:20,480 --> 00:02:20,580\nUntertitel.\n\n\n00:02:20,580 --> 00:02:20,660\nUntertitel.\n\n\n00:02:20,660 --> 00:02:20,760\nUntertitel.\n\n\n00:02:20,780 --> 00:02:23,380\nSich Zuh\u00f6rens beflissen; Zu h\u00f6ren diesen Mund:\n\n\n00:02:25,740 --> 00:02:28,380\nKein Predigt niemalen niemahen,\n\n\n00:02:30,660 --> 00:02:32,900\nden Krebsen so g'fallen. Er geht zu den\n\n\n00:02:33,240 --> 00:02:35,260\nFisch gro\u00dfe, Fisch kleine, Fisch gro\u00dfe, Fisch kleine,\n\n\n00:02:35,600 --> 00:02:37,700\nVornehm und gemeine, Vornehm und gemeine,\n\n\n00:02:37,920 --> 00:02:39,960\nErheben die K\u00f6pfe Erheben die K\u00f6pfe\n\n\n00:02:40,260 --> 00:02:42,520\nDie Kirche findt ledig. Wie verst\u00e4ndge Gesch\u00f6pfe:\n\n\n00:02:44,520 --> 00:02:47,380\nAuf Gottes Begehren Auf Gottes Begehren\n\n\n00:02:47,380 --> 00:02:52,220\nDie Predigt vernehmen: Die Predigt anh\u00f6ren.\n\n\n00:03:05,020 --> 00:03:08,200\nDie Predigt vernehmen: Die Predigt geendet,\n\n\n00:03:08,320 --> 00:03:10,540\nEin jeder sich wendet, Ein jeder sich wendet,\n\n\n00:03:14,540 --> 00:03:17,360\nDie Kirche findt ledig. Die Hechte bleiben Diebe,\n\n\n00:03:17,380 --> 00:03:19,860\nDie Kirche findt ledig. Die Aale viel lieben.\n\n\n00:03:20,080 --> 00:03:22,120\nDie Predigt vernehmen: Den Karpfen so g'fallen.\n\n\n00:03:22,340 --> 00:03:24,360\nSie bleiben wie alle. Wie verst\u00e4ndge Gesch\u00f6pfe:\n\n\n00:03:24,620 --> 00:03:26,740\nDie Krebs gehn zur\u00fccke, Antonius zur Predigt Die Krebs gehn zur\u00fccke,\n\n\n00:03:27,100 --> 00:03:29,200\nDie Kirche findt ledig. ist bleimticke,\n\n\n00:03:29,560 --> 00:03:31,800\nDie Kirche findt ledig. Die Karpfen viel fressen,\n\n\n00:03:31,940 --> 00:03:35,040\nDie Predigt vernehmen: die Predigt vergessen.\n\n\n00:03:36,460 --> 00:03:38,660\nDie Predigt vernehmen: Den Karpfen so g'fallen.\n\n\n00:03:38,800 --> 00:03:40,820\nSie bleiben wie alle. Wie verst\u00e4ndge Gesch\u00f6pfe:\n\n\n00:03:41,180 --> 00:03:44,860\nDie Predigt vernehmen: Den Karpfen so g'fallen. Den Karpfen so g'fallen.\n\n\n00:03:47,580 --> 00:04:02,080\nHatsakama\n\n\n00:04:02,900 --> 00:04:05,180\nKorju\n\n\n00:04:05,420 --> 00:04:08,100\nMinor\n\n\n00:04:08,200 --> 00:04:12,840\nHatsakama\n\n\n00:04:12,980 --> 00:04:16,000\nHatsakama\n\n\n00:04:16,180 --> 00:04:17,080\nKorju\n";
+
+    const subtitlesContainer = document.getElementById('subtitles');
+    const video = document.getElementById('video');
+
+    // Parse SRT
+    function parseSRT(srt) {
+      const subtitles = [];
+      const lines = srt.split('\n');
+      let subtitle = { start: null, end: null, text: '' };
+
+      lines.forEach((line) => {
+        const timeMatch = line.match(/(\d{2}:\d{2}:\d{2}),(\d{3}) --> (\d{2}:\d{2}:\d{2}),(\d{3})/);
+        if (timeMatch) {
+          if (subtitle.text) subtitles.push(subtitle);
+          subtitle = {
+            start: timeToSeconds(timeMatch[1], timeMatch[2]),
+            end: timeToSeconds(timeMatch[3], timeMatch[4]),
+            text: ''
+          };
+        } else if (line.trim() === '') {
+          if (subtitle.text) subtitles.push(subtitle);
+          subtitle = { start: null, end: null, text: '' };
+        } else {
+          subtitle.text += (subtitle.text ? '\n' : '') + line;
+        }
+      });
+      return subtitles;
+    }
+
+    function timeToSeconds(hhmmss, milliseconds) {
+      const [hours, minutes, seconds] = hhmmss.split(':').map(Number);
+      return hours * 3600 + minutes * 60 + seconds + milliseconds / 1000;
+    }
+
+    // // Convert parsed subtitles to WebVTT format
+    // function convertToVTT(subtitles) {
+    //   let vtt = 'WEBVTT\n\n';
+    //   subtitles.forEach((subtitle) => {
+    //     const start = secondsToVTT(subtitle.start);
+    //     const end = secondsToVTT(subtitle.end);
+    //     vtt += `${start} --> ${end}\n${subtitle.text}\n\n`;
+    //   });
+    //   return vtt;
+    // }
+
+        // Convert parsed subtitles to WebVTT format
+    function convertToVTT(subtitles) {
+    let vtt = 'WEBVTT\n\n'; // Ensure proper WebVTT header
+    subtitles.forEach((subtitle) => {
+        if (subtitle.text.trim()) { // Ignore empty or invalid subtitles
+        const start = secondsToVTT(subtitle.start);
+        const end = secondsToVTT(subtitle.end);
+        vtt += `${start} --> ${end}\n${subtitle.text.trim()}\n\n`;
+        }
+    });
+    return vtt;
+    }
+
+    function secondsToVTT(seconds) {
+      const hh = String(Math.floor(seconds / 3600)).padStart(2, '0');
+      const mm = String(Math.floor((seconds % 3600) / 60)).padStart(2, '0');
+      const ss = String(Math.floor(seconds % 60)).padStart(2, '0');
+      const ms = String(Math.floor((seconds % 1) * 1000)).padStart(3, '0');
+      return `${hh}:${mm}:${ss}.${ms}`;
+    }
+
+    // Generate subtitle list
+    function generateSubtitleList(subtitles) {
+      subtitles.forEach((subtitle) => {
+        const div = document.createElement('div');
+        div.className = 'subtitle';
+        const link = document.createElement('a');
+        link.href = '#';
+        link.textContent = subtitle.text;
+        link.onclick = (e) => {
+          e.preventDefault();
+          video.currentTime = subtitle.start;
+          video.play();
+        };
+        div.appendChild(link);
+        subtitlesContainer.appendChild(div);
+      });
+    }
+
+    // Add VTT track to video
+    function addTrackToVideo(vttData) {
+      const blob = new Blob([vttData], { type: 'text/vtt' });
+      const url = URL.createObjectURL(blob);
+      const track = document.getElementById('subtitle-track');
+      track.src = url;
+    }
+
+    // Main execution
+    const subtitles = parseSRT(srtData);
+    const vttData = convertToVTT(subtitles);
+    addTrackToVideo(vttData);
+    generateSubtitleList(subtitles);
+  </script>
+</body>
+</html>
+

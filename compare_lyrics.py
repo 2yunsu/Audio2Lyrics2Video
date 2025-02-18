@@ -1,4 +1,9 @@
 import csv
+'''
+추출한 가사와 정답 가사를 비교하여 정답 가사를 덮어씌우는 코드
+'''
+
+
 
 # 원본 CSV 파일 경로와 새로운 CSV 파일 경로
 lyrics_csv_path = "processed_lyrics.csv"  # 대조할 lyrics가 있는 CSV
