@@ -31,17 +31,17 @@ def main():
 > `converted_dir` stores raw SRT files extracted from MP3 files.
 - TODO: The script should be updated to use `./audio/converted` after comparing `50 Deutsche Lieder.csv` with the SRT files.
 
-### How to use
+## How to use
 1. place video files(`.mp4`), subtitle(`.srt`) and HTML files in the same directory.
 2. Open the HTML file in a browser to view the content.
 
-### Generate ground truth lyrics from '50 Deutsche Lieder.xlsx'.
+## TODO
+## Generate ground truth lyrics from '50 Deutsche Lieder.xlsx'.
 1. Run the following command:
 ```
 python make_csv.py
 ```
 
-### TODO
 - `compare_lyrics_v2.py`
     - Set `OPENAI_API_KEY`.
     - Compare '50 Deutsche Lieder.csv' with the extracted SRT files.
